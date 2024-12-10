@@ -3,8 +3,9 @@
 import { useCookie } from "../../../hooks/useCookie";
 
 const LoginMaster = () => {
+  const { setCookie } = useCookie();
+  
   async function handleLogin() {
-    const { setCookie } = useCookie();
     await setCookie({
       cookieName: "token",
       cookieValue: "123456789",
