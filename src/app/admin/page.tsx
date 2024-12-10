@@ -7,7 +7,7 @@ import { redirect } from "next/navigation";
 const Admin = () => {
   const { getCookies } = useCookie();
 
-  async function checkToken() {
+  async function CheckToken() {
     const token = await getCookies("token");
 
     console.log(token);
@@ -18,7 +18,7 @@ const Admin = () => {
   }
 
   useEffect(() => {
-    checkToken();
+    CheckToken();
   }, []);
 
   return (
