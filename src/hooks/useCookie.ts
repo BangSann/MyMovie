@@ -17,7 +17,7 @@ export function useCookie() {
   }) {
     console.log(cookieValue, cookieName);
     
-    const res = await fetch("/api/cookies/set-cookies", {
+    await fetch("/api/cookies/set-cookies", {
       method: "POST",
       body: JSON.stringify({
         cookieValue: cookieValue,

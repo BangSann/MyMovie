@@ -2,8 +2,6 @@
 
 import { useEffect } from "react";
 import { useCookie } from "../../hooks/useCookie";
-import Link from "next/link";
-import { useRouter } from "next/router";
 import { redirect } from "next/navigation";
 
 const Admin = () => {
