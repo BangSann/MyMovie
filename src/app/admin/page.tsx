@@ -25,7 +25,7 @@ const Admin = () => {
 
   return (
     <section className="flex justify-center items-center h-[100vh] bg-white text-black">
-      <h1>Admin</h1>
+      <h1>Admin</h1>p
     </section>
   );
 };
